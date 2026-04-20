@@ -75,10 +75,37 @@
       line-height: 1.8;
     }
 
+    .about-text p + p {
+      margin-top: 0.75rem;
+    }
+
     .about-text .en {
       color: var(--muted);
       font-size: 0.875rem;
       margin-top: 0.75rem;
+    }
+
+    .quotes {
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .quote {
+      font-size: 0.875rem;
+      color: var(--accent);
+      font-style: italic;
+    }
+
+    .quote span {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-style: normal;
+      margin-top: 0.1rem;
     }
 
     /* ── Tags ── */
@@ -204,16 +231,29 @@
       <p class="section-label">About / 自己紹介</p>
       <div class="about-text">
         <p>
-          営業・医療・製造・建設・ITと複数業界でのビジネス経験をベースに、
-          業務効率化・自動化のツール開発をしています。<br>
+          開通試験のテスト要員としてITの基礎を習得後、インフラエンジニアとしてネットワーク・サーバーを経験。
+          現在は社内SEとして開発業務に携わっています。<br>
+          営業・医療・製造・建設など複数業界でのビジネス経験を活かし、
+          現場の非効率を見つけては自動化で解決することが得意です。
+        </p>
+        <p>
+          Jiraチケット管理とGitHubブランチを連携した開発フロー管理から、
+          進捗更新・ステータス変更・コメント追記まで一貫して自動化しています。<br>
           Jira / Confluence / Slack / Excel（Microsoft Graph API）を組み合わせた
-          社内自動化基盤の構築が得意です。
+          社内自動化基盤の構築が専門です。
         </p>
         <p class="en">
-          With business experience across sales, healthcare, manufacturing, construction, and IT,
-          I build automation tools to streamline workflows.
-          Specialized in integrating Jira, Confluence, Slack, and Excel via Microsoft Graph API.
+          Started in IT through network testing, moved into infrastructure engineering,
+          and now work as an in-house SE focused on development.<br>
+          With business experience across sales, healthcare, manufacturing, and construction,
+          I specialize in spotting inefficiencies and solving them through automation.<br>
+          I manage dev workflows by connecting Jira ticket tracking with GitHub branches,
+          automating status updates, progress tracking, and comment logging end-to-end.
         </p>
+        <div class="quotes">
+          <p class="quote">"Automate the boring, enjoy the change."<span>— 退屈なことは自動化して、変化を楽しむ。</span></p>
+          <p class="quote">"I enjoy the moment when something that didn't work finally works."<span>— できなかったことができた瞬間が、一番楽しい。</span></p>
+        </div>
       </div>
     </section>
 
