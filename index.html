@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>matsukei721 — Portfolio</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+      --accent2: #3fb950;
+      --tag-bg: #1f3a5f;
+      --tag-text: #79c0ff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    header h1 span { color: var(--accent); }
+
+    .tagline {
+      color: var(--muted);
+      margin-top: 0.4rem;
+      font-size: 0.95rem;
+    }
+
+    /* ── Section ── */
+    section { margin-bottom: 3rem; }
+
+    .section-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    /* ── About ── */
+    .about-text {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.95rem;
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    .about-text .en {
+      color: var(--muted);
+      font-size: 0.875rem;
+      margin-top: 0.75rem;
+    }
+
+    /* ── Tags ── */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tag {
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      border-radius: 20px;
+      padding: 0.25rem 0.85rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      border: 1px solid #1d4a80;
+    }
+
+    /* ── Industry ── */
+    .industry-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .industry-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.3rem 0.85rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    /* ── Project card ── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      transition: border-color 0.15s;
+    }
+
+    .card:hover { border-color: var(--accent); }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+
+    .card-desc {
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin-bottom: 0.85rem;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .card-tag {
+      background: #1a2a1a;
+      color: var(--accent2);
+      border: 1px solid #2a4a2a;
+      border-radius: 20px;
+      padding: 0.15rem 0.65rem;
+      font-size: 0.75rem;
+    }
+
+    /* ── Links ── */
+    .links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.5rem 1rem;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .link-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <h1><span>matsukei721</span></h1>
+      <p class="tagline">Python Developer · Business Automation · Multi-Industry</p>
+    </header>
+
+    <!-- About -->
+    <section>
+      <p class="section-label">About / 自己紹介</p>
+      <div class="about-text">
+        <p>
+          営業・医療・製造・建設・ITと複数業界でのビジネス経験をベースに、
+          業務効率化・自動化のツール開発をしています。<br>
+          Jira / Confluence / Slack / Excel（Microsoft Graph API）を組み合わせた
+          社内自動化基盤の構築が得意です。
+        </p>
+        <p class="en">
+          With business experience across sales, healthcare, manufacturing, construction, and IT,
+          I build automation tools to streamline workflows.
+          Specialized in integrating Jira, Confluence, Slack, and Excel via Microsoft Graph API.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <p class="section-label">Skills / スキル</p>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">業務自動化 / Automation</span>
+        <span class="tag">Selenium</span>
+        <span class="tag">Pandas</span>
+        <span class="tag">REST API</span>
+        <span class="tag">Microsoft Graph API</span>
+        <span class="tag">Linux</span>
+        <span class="tag">Git</span>
+        <span class="tag">Jira / Confluence</span>
+        <span class="tag">uv / ruff</span>
+      </div>
+    </section>
+
+    <!-- Industry -->
+    <section>
+      <p class="section-label">Industry Experience / 業界経験</p>
+      <div class="industry-grid">
+        <span class="industry-item">営業 / Sales</span>
+        <span class="industry-item">医療 / Healthcare</span>
+        <span class="industry-item">製造 / Manufacturing</span>
+        <span class="industry-item">建設 / Construction</span>
+        <span class="industry-item">IT</span>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <p class="section-label">Projects / 制作物</p>
+      <div class="card">
+        <p class="card-title">Business Automation Tool</p>
+        <p class="card-desc">
+          Jira・Confluence・Slack・Excel（OneDrive）を連携した業務自動化ツール。<br>
+          Issue管理・ページ更新・通知・Excel書き込みを1スクリプトで自動化。<br>
+          <span style="font-size:0.8rem;">
+            Automates issue tracking, page updates, Slack notifications, and Excel writes
+            across Jira, Confluence, and OneDrive in a single workflow.
+          </span>
+        </p>
+        <div class="card-tags">
+          <span class="card-tag">Python</span>
+          <span class="card-tag">Jira REST API v3</span>
+          <span class="card-tag">Confluence REST API v2</span>
+          <span class="card-tag">Slack Web API</span>
+          <span class="card-tag">Microsoft Graph API</span>
+          <span class="card-tag">uv</span>
+          <span class="card-tag">loguru</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Links -->
+    <section>
+      <p class="section-label">Links</p>
+      <div class="links">
+        <a class="link-btn" href="https://github.com/matsukei721" target="_blank" rel="noopener">
+          <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+            0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+            -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87
+            2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+            0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82
+            .64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82
+            2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15
+            0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01
+            1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          GitHub
+        </a>
+        <a class="link-btn" href="https://github.com/matsukei721/Automation" target="_blank" rel="noopener">
+          ⚙ Automation Repo
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 matsukei721</p>
+    </footer>
+
+  </div>
+</body>
+</html>
